@@ -21,9 +21,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from davinci device
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
-# Inherit some common ExtendedUI stuff.
-$(call inherit-product, vendor/exui/config/common.mk)
+# Kasumi flags
+KASUMI_INCLUDE_GCGOP := true
+KASUMI_BUILD_TYPE := gapps
+TARGET_GAPPS_ARCH := arm64
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_BLUR := true
+
+# Kasumi reLive flags
+TARGET_EXCLUDE_ADB_ROOT := true
+TARGET_EXCLUDE_LOS_EXTRA_CLI_UTILS := true
+TARGET_SKIP_BACKUPTOOL := true
 
 PRODUCT_NAME := exui_davinci
 PRODUCT_DEVICE := davinci
