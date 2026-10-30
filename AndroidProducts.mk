@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/exui_davinci.mk
+    $(LOCAL_DIR)/kasumi_davinci.mk
 
 COMMON_LUNCH_CHOICES := \
-    exui_davinci-user \
-    exui_davinci-userdebug \
-    exui_davinci-eng
+    kasumi_davinci-user \
+    kasumi_davinci-userdebug \
+    kasumi_davinci-eng
