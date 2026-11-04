@@ -25,7 +25,7 @@ $(call inherit-product, device/xiaomi/davinci/device.mk)
 KASUMI_INCLUDE_GCGOP := true
 KASUMI_BUILD_TYPE := gapps
 TARGET_GAPPS_ARCH := arm64
-TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_FACE_UNLOCK_SUPPORTED := false
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_BLUR := true
 
